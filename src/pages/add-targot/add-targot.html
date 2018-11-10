@@ -1,0 +1,37 @@
+<!--
+  Generated template for the AddTargotPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add a targot</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="newTargot.name" placeholder="Spor"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Definition</ion-label>
+    <ion-input [(ngModel)]="newTargot.definition" placeholder="1 hour a day"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Value</ion-label>
+    <ion-input [(ngModel)]="newTargot.value" min="1" max="5" type="number" placeholder="3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Days a week</ion-label>
+    <ion-input [(ngModel)]="newTargot.daysWeek" min="1" max="7" type="number" placeholder="7"></ion-input>
+  </ion-item>
+
+  <button (click)="commit()"  ion-button block center clear>Add</button>
+</ion-content>
+
+
