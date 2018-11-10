@@ -1,0 +1,8 @@
+{
+  "name": "Targot",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "3cbb2086"
+}
